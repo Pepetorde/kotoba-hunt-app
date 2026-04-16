@@ -6,6 +6,18 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		B1C35D6B2F90B57B00B604CC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B1C35D682F90B57B00B604CC /* Assets.xcassets */; };
+		B1C35D6C2F90B57B00B604CC /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1C35D662F90B57B00B604CC /* MainView.swift */; };
+		B1C35D6D2F90B57B00B604CC /* KotobaHuntApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1C35D692F90B57B00B604CC /* KotobaHuntApp.swift */; };
+		B1C35D702F90B58E00B604CC /* KotobaHuntTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1C35D6E2F90B58E00B604CC /* KotobaHuntTests.swift */; };
+		B1C35D742F90B58E00B604CC /* KotobaHuntUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1C35D712F90B58E00B604CC /* KotobaHuntUITests.swift */; };
+		B1C35D752F90B58E00B604CC /* KotobaHuntUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1C35D722F90B58E00B604CC /* KotobaHuntUITestsLaunchTests.swift */; };
+		B1C35D782F90BABA00B604CC /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1C35D772F90BAB700B604CC /* Router.swift */; };
+		B1C35D7B2F90BC5800B604CC /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1C35D7A2F90BC4A00B604CC /* RootView.swift */; };
+		B1C35D7E2F90BE4200B604CC /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1C35D7D2F90BE4200B604CC /* CameraView.swift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		B154DD4E2F8FCDF0002491D5 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -27,25 +39,16 @@
 		B154DD3E2F8FCDEF002491D5 /* KotobaHunt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KotobaHunt.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B154DD4D2F8FCDF0002491D5 /* KotobaHuntTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KotobaHuntTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B154DD572F8FCDF0002491D5 /* KotobaHuntUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KotobaHuntUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B1C35D662F90B57B00B604CC /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		B1C35D682F90B57B00B604CC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B1C35D692F90B57B00B604CC /* KotobaHuntApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KotobaHuntApp.swift; sourceTree = "<group>"; };
+		B1C35D6E2F90B58E00B604CC /* KotobaHuntTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KotobaHuntTests.swift; sourceTree = "<group>"; };
+		B1C35D712F90B58E00B604CC /* KotobaHuntUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KotobaHuntUITests.swift; sourceTree = "<group>"; };
+		B1C35D722F90B58E00B604CC /* KotobaHuntUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KotobaHuntUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		B1C35D772F90BAB700B604CC /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		B1C35D7A2F90BC4A00B604CC /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
+		B1C35D7D2F90BE4200B604CC /* CameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
-
-/* Begin PBXFileSystemSynchronizedRootGroup section */
-		B154DD402F8FCDEF002491D5 /* KotobaHunt */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = KotobaHunt;
-			sourceTree = "<group>";
-		};
-		B154DD502F8FCDF0002491D5 /* KotobaHuntTests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = KotobaHuntTests;
-			sourceTree = "<group>";
-		};
-		B154DD5A2F8FCDF0002491D5 /* KotobaHuntUITests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = KotobaHuntUITests;
-			sourceTree = "<group>";
-		};
-/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		B154DD3B2F8FCDEF002491D5 /* Frameworks */ = {
@@ -75,9 +78,9 @@
 		B154DD352F8FCDEF002491D5 = {
 			isa = PBXGroup;
 			children = (
-				B154DD402F8FCDEF002491D5 /* KotobaHunt */,
-				B154DD502F8FCDF0002491D5 /* KotobaHuntTests */,
-				B154DD5A2F8FCDF0002491D5 /* KotobaHuntUITests */,
+				B1C35D6A2F90B57B00B604CC /* KotobaHunt */,
+				B1C35D6F2F90B58E00B604CC /* KotobaHuntTests */,
+				B1C35D732F90B58E00B604CC /* KotobaHuntUITests */,
 				B154DD3F2F8FCDEF002491D5 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -90,6 +93,68 @@
 				B154DD572F8FCDF0002491D5 /* KotobaHuntUITests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		B1C35D672F90B57B00B604CC /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				B1C35D662F90B57B00B604CC /* MainView.swift */,
+				B1C35D7C2F90BE3100B604CC /* Camera */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		B1C35D6A2F90B57B00B604CC /* KotobaHunt */ = {
+			isa = PBXGroup;
+			children = (
+				B1C35D692F90B57B00B604CC /* KotobaHuntApp.swift */,
+				B1C35D762F90B5B700B604CC /* Resources */,
+				B1C35D792F90BC3900B604CC /* Navigation */,
+				B1C35D672F90B57B00B604CC /* Features */,
+			);
+			path = KotobaHunt;
+			sourceTree = "<group>";
+		};
+		B1C35D6F2F90B58E00B604CC /* KotobaHuntTests */ = {
+			isa = PBXGroup;
+			children = (
+				B1C35D6E2F90B58E00B604CC /* KotobaHuntTests.swift */,
+			);
+			path = KotobaHuntTests;
+			sourceTree = "<group>";
+		};
+		B1C35D732F90B58E00B604CC /* KotobaHuntUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B1C35D712F90B58E00B604CC /* KotobaHuntUITests.swift */,
+				B1C35D722F90B58E00B604CC /* KotobaHuntUITestsLaunchTests.swift */,
+			);
+			path = KotobaHuntUITests;
+			sourceTree = "<group>";
+		};
+		B1C35D762F90B5B700B604CC /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B1C35D682F90B57B00B604CC /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		B1C35D792F90BC3900B604CC /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				B1C35D7A2F90BC4A00B604CC /* RootView.swift */,
+				B1C35D772F90BAB700B604CC /* Router.swift */,
+			);
+			path = Navigation;
+			sourceTree = "<group>";
+		};
+		B1C35D7C2F90BE3100B604CC /* Camera */ = {
+			isa = PBXGroup;
+			children = (
+				B1C35D7D2F90BE4200B604CC /* CameraView.swift */,
+			);
+			path = Camera;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -107,9 +172,6 @@
 			);
 			dependencies = (
 				B154DD8A2F8FE010002491D5 /* PBXTargetDependency */,
-			);
-			fileSystemSynchronizedGroups = (
-				B154DD402F8FCDEF002491D5 /* KotobaHunt */,
 			);
 			name = KotobaHunt;
 			packageProductDependencies = (
@@ -131,9 +193,6 @@
 			dependencies = (
 				B154DD4F2F8FCDF0002491D5 /* PBXTargetDependency */,
 			);
-			fileSystemSynchronizedGroups = (
-				B154DD502F8FCDF0002491D5 /* KotobaHuntTests */,
-			);
 			name = KotobaHuntTests;
 			packageProductDependencies = (
 			);
@@ -153,9 +212,6 @@
 			);
 			dependencies = (
 				B154DD592F8FCDF0002491D5 /* PBXTargetDependency */,
-			);
-			fileSystemSynchronizedGroups = (
-				B154DD5A2F8FCDF0002491D5 /* KotobaHuntUITests */,
 			);
 			name = KotobaHuntUITests;
 			packageProductDependencies = (
@@ -216,6 +272,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B1C35D6B2F90B57B00B604CC /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -240,6 +297,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B1C35D7B2F90BC5800B604CC /* RootView.swift in Sources */,
+				B1C35D6C2F90B57B00B604CC /* MainView.swift in Sources */,
+				B1C35D782F90BABA00B604CC /* Router.swift in Sources */,
+				B1C35D7E2F90BE4200B604CC /* CameraView.swift in Sources */,
+				B1C35D6D2F90B57B00B604CC /* KotobaHuntApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -247,6 +309,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B1C35D702F90B58E00B604CC /* KotobaHuntTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -254,6 +317,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B1C35D742F90B58E00B604CC /* KotobaHuntUITests.swift in Sources */,
+				B1C35D752F90B58E00B604CC /* KotobaHuntUITestsLaunchTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
