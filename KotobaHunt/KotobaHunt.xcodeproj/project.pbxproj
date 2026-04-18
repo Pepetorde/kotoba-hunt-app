@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B16EDB752F9332DB0011101C /* CameraService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B16EDB742F9332DB0011101C /* CameraService.swift */; };
 		B1C35D6B2F90B57B00B604CC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B1C35D682F90B57B00B604CC /* Assets.xcassets */; };
 		B1C35D6C2F90B57B00B604CC /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1C35D662F90B57B00B604CC /* MainView.swift */; };
 		B1C35D6D2F90B57B00B604CC /* KotobaHuntApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1C35D692F90B57B00B604CC /* KotobaHuntApp.swift */; };
@@ -39,6 +40,7 @@
 		B154DD3E2F8FCDEF002491D5 /* KotobaHunt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KotobaHunt.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B154DD4D2F8FCDF0002491D5 /* KotobaHuntTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KotobaHuntTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B154DD572F8FCDF0002491D5 /* KotobaHuntUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KotobaHuntUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B16EDB742F9332DB0011101C /* CameraService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraService.swift; sourceTree = "<group>"; };
 		B1C35D662F90B57B00B604CC /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		B1C35D682F90B57B00B604CC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B1C35D692F90B57B00B604CC /* KotobaHuntApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KotobaHuntApp.swift; sourceTree = "<group>"; };
@@ -152,6 +154,7 @@
 		B1C35D7C2F90BE3100B604CC /* Camera */ = {
 			isa = PBXGroup;
 			children = (
+				B16EDB742F9332DB0011101C /* CameraService.swift */,
 				B1C35D7D2F90BE4200B604CC /* CameraView.swift */,
 			);
 			path = Camera;
@@ -299,6 +302,7 @@
 			files = (
 				B1C35D7B2F90BC5800B604CC /* RootView.swift in Sources */,
 				B1C35D6C2F90B57B00B604CC /* MainView.swift in Sources */,
+				B16EDB752F9332DB0011101C /* CameraService.swift in Sources */,
 				B1C35D782F90BABA00B604CC /* Router.swift in Sources */,
 				B1C35D7E2F90BE4200B604CC /* CameraView.swift in Sources */,
 				B1C35D6D2F90B57B00B604CC /* KotobaHuntApp.swift in Sources */,
@@ -474,6 +478,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = "Kotoba Hunt";
+				INFOPLIST_KEY_NSCameraUsageDescription = "This app needs camera access to scan Japanese text.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -508,6 +513,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = "Kotoba Hunt";
+				INFOPLIST_KEY_NSCameraUsageDescription = "This app needs camera access to scan Japanese text.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
