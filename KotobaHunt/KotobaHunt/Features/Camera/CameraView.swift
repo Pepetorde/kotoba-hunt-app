@@ -10,12 +10,21 @@ import AVFoundation
 import Combine
 
 struct CameraView: View {
-    @StateObject private var cameraService = CameraService()
+    @StateObject private var viewModel = CameraViewModel()
 
     var body: some View {
         ZStack {
-            CameraPreview(session: cameraService.session)
-                .ignoresSafeArea()
+            if viewModel.permissionGranted {
+                CameraPreview(session: viewModel.session)
+                    .ignoresSafeArea()
+            } else {
+                VStack(spacing: 16) {
+                    Text("Camera access is required")
+                    Button("Open Settings") {
+                        openSettings()
+                    }
+                }
+            }
 
             VStack {
                 Spacer()
@@ -26,11 +35,16 @@ struct CameraView: View {
             }
         }
         .onAppear {
-            cameraService.setup()
-            cameraService.start()
+            viewModel.checkPermissions()
         }
         .onDisappear {
-            cameraService.stop()
+            viewModel.stopCapture()
+        }
+    }
+
+    func openSettings() {
+        if let url = URL(string: UIApplication.openSettingsURLString) {
+            UIApplication.shared.open(url)
         }
     }
 }
@@ -51,8 +65,6 @@ struct ShutterButton: View {
     }
 }
 
-// TODO: gestionar permisos
-
 struct CameraPreview: UIViewRepresentable {
     let session: AVCaptureSession
 
@@ -64,6 +76,7 @@ struct CameraPreview: UIViewRepresentable {
         previewLayer.frame = UIScreen.main.bounds
 
         view.layer.addSublayer(previewLayer)
+        view.backgroundColor = .black
 
         return view
     }
