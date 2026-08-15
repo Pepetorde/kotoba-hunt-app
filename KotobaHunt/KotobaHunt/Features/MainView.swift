@@ -5,11 +5,10 @@
 //  Created by Pepe on 15/4/26.
 //
 
-import Combine
 import SwiftUI
 
 struct MainView: View {
-    @ObservedObject var router: Router
+    let router: Router
 
     var body: some View {
         Button("Start the hunt") {
